@@ -1,0 +1,20 @@
+[package]
+name = "dns"
+version = "1.1.0"
+edition = "2021"
+authors = ["Andrei Marinica <andrei.marinica@dharitri.com>", "Dharitri <contact@dharitri.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/dharitri/mx-dns-sc"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "Dharitri Domain Name Service smart contract"
+keywords = ["dharitri", "wasm", "webassembly", "blockchain", "contract"]
+categories = ["no-std", "wasm", "cryptography::cryptocurrencies", "development-tools"]
+[dependencies.dharitri-sc-modules]
+version = "0.0.4"
+
+[dependencies.dharitri-sc]
+version = "0.0.4"
+[dev-dependencies.dharitri-sc-scenario]
+version = "0.0.4"
