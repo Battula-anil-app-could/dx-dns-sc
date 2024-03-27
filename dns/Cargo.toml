@@ -12,9 +12,9 @@ description = "Dharitri Domain Name Service smart contract"
 keywords = ["dharitri", "wasm", "webassembly", "blockchain", "contract"]
 categories = ["no-std", "wasm", "cryptography::cryptocurrencies", "development-tools"]
 [dependencies.dharitri-sc-modules]
-version = "0.0.4"
+version = "0.11.4"
 
 [dependencies.dharitri-sc]
-version = "0.0.4"
+version = "0.11.4"
 [dev-dependencies.dharitri-sc-scenario]
-version = "0.0.4"
+version = "0.11.4"

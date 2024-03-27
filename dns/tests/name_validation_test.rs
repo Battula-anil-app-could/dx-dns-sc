@@ -28,23 +28,23 @@ fn test_validate_name() {
     check("9999999999.x", ok);
     check("coolname0001.x", ok);
 
-    // .elrond
-    check("aaa.elrond", wrong_suffix);
-    check("aaaaaaaaaa.elrond", wrong_suffix);
-    check("zzzzzzzzzz.elrond", wrong_suffix);
-    check("0000000000.elrond", wrong_suffix);
-    check("9999999999.elrond", wrong_suffix);
-    check("coolname0001.elrond", wrong_suffix);
+    // .dharitri
+    check("aaa.dharitri", wrong_suffix);
+    check("aaaaaaaaaa.dharitri", wrong_suffix);
+    check("zzzzzzzzzz.dharitri", wrong_suffix);
+    check("0000000000.dharitri", wrong_suffix);
+    check("9999999999.dharitri", wrong_suffix);
+    check("coolname0001.dharitri", wrong_suffix);
 
     // too short
     check(".x", name_is_too_short);
     check("aa.x", name_is_too_short);
-    check(".elrond", wrong_suffix);
-    check("aa.elrond", wrong_suffix);
+    check(".dharitri", wrong_suffix);
+    check("aa.dharitri", wrong_suffix);
 
     // lowercase only
     check("Aaaaaaaaaa.x", character_not_allowed);
-    check("Aaaaaaaaaa.elrond", wrong_suffix);
+    check("Aaaaaaaaaa.dharitri", wrong_suffix);
 
     // no other chars
     check("aaaaa.aaaa.x", character_not_allowed);
@@ -52,11 +52,11 @@ fn test_validate_name() {
     check("aaaaa+aaaa.x", character_not_allowed);
     check("aaaaa-aaaa.x", character_not_allowed);
     check("aaaaa_aaaa.x", character_not_allowed);
-    check("aaaaa.aaaa.elrond", wrong_suffix);
-    check("aaaaa@aaaa.elrond", wrong_suffix);
-    check("aaaaa+aaaa.elrond", wrong_suffix);
-    check("aaaaa-aaaa.elrond", wrong_suffix);
-    check("aaaaa_aaaa.elrond", wrong_suffix);
+    check("aaaaa.aaaa.dharitri", wrong_suffix);
+    check("aaaaa@aaaa.dharitri", wrong_suffix);
+    check("aaaaa+aaaa.dharitri", wrong_suffix);
+    check("aaaaa-aaaa.dharitri", wrong_suffix);
+    check("aaaaa_aaaa.dharitri", wrong_suffix);
 
     // without suffix
     check("aaaaaaaaaa", wrong_suffix);
@@ -69,7 +69,7 @@ fn test_validate_name() {
     check("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.x", ok); // 32 bytes
     check("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.x", name_too_long); // 33 bytes
     check("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.x", name_too_long); // 37 bytes
-    check("aaaaaaaaaaaaaaaaaaaaaaaaa.elrond", wrong_suffix); // 32 bytes
-    check("aaaaaaaaaaaaaaaaaaaaaaaaaa.elrond", name_too_long); // 33 bytes
-    check("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.elrond", name_too_long); // 37 bytes
+    check("aaaaaaaaaaaaaaaaaaaaaaa.dharitri", wrong_suffix); // 32 bytes
+    check("aaaaaaaaaaaaaaaaaaaaaaaa.dharitri", name_too_long); // 33 bytes
+    check("aaaaaaaaaaaaaaaaaaaaaaaaaaaa.dharitri", name_too_long); // 37 bytes
 }

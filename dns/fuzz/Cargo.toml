@@ -16,8 +16,8 @@ cargo-fuzz = true
 
 [dependencies]
 libfuzzer-sys = "0.3"
-dharitri-sc = "0.0.4"
-dharitri-sc-scenario = "0.0.4"
+dharitri-sc = "0.11.4"
+dharitri-sc-scenario = "0.11.4"
 
 [dependencies.dns]
 path = ".."

@@ -3,7 +3,7 @@ dharitri_sc::derive_imports!();
 
 const MIN_LENGTH: usize = 3;
 pub const MAX_LENGTH: usize = 32;
-const DHARITRI_SUFFIX: &[u8] = b".elrond";
+const DHARITRI_SUFFIX: &[u8] = b".egrond";
 const X_SUFFIX: &[u8] = b".x";
 
 #[derive(TopEncode, TopDecode, TypeAbi, PartialEq, Debug)]
@@ -36,8 +36,8 @@ fn validate_name_without_suffix(name_without_suffix: &[u8]) -> Result<(), &'stat
     Result::Ok(())
 }
 
-// switch the suffix from .x to .elrond for the purpose of name hashing
-// all other names (eg. using the .elrond suffix, or some invalid names), are not modified
+// switch the suffix from .x to .dharitri for the purpose of name hashing
+// all other names (eg. using the .dharitri suffix, or some invalid names), are not modified
 pub fn prepare_name_for_hash_and_classify<M: ManagedTypeApi>(
     name: &ManagedBuffer<M>,
 ) -> (ManagedBuffer<M>, SuffixType) {
@@ -58,7 +58,7 @@ fn try_replace_suffix<M: ManagedTypeApi>(
     Result::Ok(new_name)
 }
 
-// ensure the suffix is .elrond and replace it with .x
+// ensure the suffix is .dharitri and replace it with .x
 // validate the name without the prefix as well
 pub fn prepare_and_validate_name_for_migration<M: ManagedTypeApi>(
     name: &ManagedBuffer<M>,
