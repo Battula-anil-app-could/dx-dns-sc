@@ -16,7 +16,7 @@
                 "address:cool_address": {
                     "nonce": "0",
                     "balance": "123,000",
-                    "username": "str:coolname0001.dharitri"
+                    "username": "str:coolname0001.elrond"
                 },
                 "sc:dns#87": {
                     "nonce": "0",
@@ -39,7 +39,7 @@
                 "value": "0",
                 "function": "migrate",
                 "arguments": [
-                    "str:coolname0001.dharitri"
+                    "str:coolname0001.elrond"
                 ],
                 "gasLimit": "50,000,000",
                 "gasPrice": "0"

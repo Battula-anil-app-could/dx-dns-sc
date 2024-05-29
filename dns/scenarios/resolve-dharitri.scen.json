@@ -1,5 +1,5 @@
 {
-    "name": "dns resolve dharitri test",
+    "name": "dns resolve elrond test",
     "gasSchedule": "dummy",
     "steps": [
         {
@@ -16,7 +16,7 @@
                 "address:cool_address": {
                     "nonce": "0",
                     "balance": "123,000",
-                    "username": "str:coolname0001.dharitri"
+                    "username": "str:coolname0001.elrond"
                 },
                 "sc:dns#87": {
                     "nonce": "0",

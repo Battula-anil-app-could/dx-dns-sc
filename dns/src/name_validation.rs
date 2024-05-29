@@ -3,7 +3,7 @@ dharitri_sc::derive_imports!();
 
 const MIN_LENGTH: usize = 3;
 pub const MAX_LENGTH: usize = 32;
-const DHARITRI_SUFFIX: &[u8] = b".egrond";
+const DHARITRI_SUFFIX: &[u8] = b".dharitri";
 const X_SUFFIX: &[u8] = b".x";
 
 #[derive(TopEncode, TopDecode, TypeAbi, PartialEq, Debug)]
